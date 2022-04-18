@@ -16,14 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNo-6b-BcW">
-                                <rect key="frame" x="207" y="458.5" width="0.0" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rm3-el-uuK">
+                                <rect key="frame" x="40" y="281" width="334" height="0.0"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNo-6b-BcW">
+                                <rect key="frame" x="40" y="431" width="334" height="0.0"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPQ-Fp-81M">
-                                <rect key="frame" x="140.5" y="619" width="133" height="31"/>
+                                <rect key="frame" x="140.5" y="581" width="133" height="31"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Получить шутку"/>
@@ -31,28 +39,25 @@
                                     <action selector="getJokeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m3m-bh-K06"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rm3-el-uuK">
-                                <rect key="frame" x="20" y="224" width="374" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QPQ-Fp-81M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kyo-Ul-T5H"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rm3-el-uuK" secondAttribute="trailing" constant="20" id="Vy4-HA-Ceq"/>
-                            <constraint firstItem="Rm3-el-uuK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y8s-hn-whC"/>
-                            <constraint firstItem="gNo-6b-BcW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZFP-KQ-wB0"/>
-                            <constraint firstItem="Rm3-el-uuK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="aJx-d5-LxP"/>
-                            <constraint firstItem="gNo-6b-BcW" firstAttribute="top" secondItem="Rm3-el-uuK" secondAttribute="bottom" constant="234.5" id="g7w-bu-A2b"/>
-                            <constraint firstItem="Rm3-el-uuK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="giC-pa-9cB"/>
-                            <constraint firstItem="QPQ-Fp-81M" firstAttribute="top" secondItem="gNo-6b-BcW" secondAttribute="bottom" constant="160.5" id="k72-9l-WuO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QPQ-Fp-81M" secondAttribute="bottom" constant="250" id="7pc-I0-FVd"/>
+                            <constraint firstItem="gNo-6b-BcW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8c3-2S-nMo"/>
+                            <constraint firstItem="QPQ-Fp-81M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BuB-Y7-Hkd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rm3-el-uuK" secondAttribute="trailing" constant="40" id="DNs-LW-5rr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gNo-6b-BcW" secondAttribute="trailing" constant="40" id="RFj-Y4-alZ"/>
+                            <constraint firstItem="gNo-6b-BcW" firstAttribute="top" secondItem="Rm3-el-uuK" secondAttribute="bottom" constant="150" id="XLT-ho-RSS"/>
+                            <constraint firstItem="Rm3-el-uuK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a0N-N6-GQo"/>
+                            <constraint firstItem="Rm3-el-uuK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="dx8-WN-ye8"/>
+                            <constraint firstItem="gNo-6b-BcW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="vB6-Gk-Xsr"/>
+                            <constraint firstItem="QPQ-Fp-81M" firstAttribute="top" secondItem="gNo-6b-BcW" secondAttribute="bottom" constant="150" id="vPg-fa-Xm5"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="deliveryLabel" destination="gNo-6b-BcW" id="adc-5S-gUE"/>
+                        <outlet property="getJokeBtnUI" destination="QPQ-Fp-81M" id="OJ6-LF-86M"/>
                         <outlet property="setupLabel" destination="Rm3-el-uuK" id="4s5-CV-Q3i"/>
                     </connections>
                 </viewController>
@@ -64,6 +69,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

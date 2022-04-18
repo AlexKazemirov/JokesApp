@@ -11,18 +11,27 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var setupLabel: UILabel!
     @IBOutlet weak var deliveryLabel: UILabel!
+    @IBOutlet weak var getJokeBtnUI: UIButton!
     
     override func viewDidLoad() {
+        getJokeBtnUI.layer.cornerRadius = 15
         super.viewDidLoad()
     }
     
     @IBAction func getJokeButton(_ sender: Any) {
         ApiManager.shared.getAnyJoke(completion: { jokes in
-            if let setup = jokes.setup, let joke = jokes.delivery {
+            if let setup = jokes.setup {
                 DispatchQueue.main.async {
-                    self.deliveryLabel.text = "\(joke)"
                     self.setupLabel.text = "\(setup)"
+                    if let delivery = jokes.delivery {
+                        self.deliveryLabel.text = "\(delivery)"
+                    }
                 }
+            } else {
+                DispatchQueue.main.async {
+                    self.getJokeButton(sender)
+                }
+                
             }
         })
     }
